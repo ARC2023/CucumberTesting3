@@ -37,4 +37,20 @@ public class LoginScenario {
 	   
 	   
 	}
+	@When("I enter UN as {string}")
+	public void i_enter_un_as(String UN) {
+	    driver.findElement(By.id("user-name")).sendKeys(UN);
+	}
+
+	@When("I enter PW as {string}")
+	public void i_enter_pw_as(String PW) {
+		driver.findElement(By.id("password")).sendKeys(PW);
+	}
+
+	@Then("I logged in to sauce labs")
+	public void i_logged_in_to_sauce_labs() throws InterruptedException {
+	    driver.findElement(By.id("login-button")).click();
+	    Thread.sleep(2000);
+	    driver.quit();
+	}
 }

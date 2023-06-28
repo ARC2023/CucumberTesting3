@@ -9,7 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features= {"src\\test\\resources\\Electronics\\"},
 		glue= {"stepdefinition"},
-		plugin= {"pretty"}			
+		plugin= {"pretty"}
+		,tags="@DataDriven"
+		
 		)
 
 public class RunTestCase {
