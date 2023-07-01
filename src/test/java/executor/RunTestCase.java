@@ -8,9 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features= {"src\\test\\resources\\Electronics\\"},
-		glue= {"stepdefinition"},
+		glue= {"stepdefinition","projecthooks"},
 		plugin= {"pretty"}
-		,tags="@DataDriven"
+		,tags="@MultipleCellsList"
 		
 		)
 

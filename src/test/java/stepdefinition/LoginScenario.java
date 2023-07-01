@@ -28,9 +28,10 @@ public class LoginScenario {
 	@Then("User lands on Sign In page of SL")
 	public void user_lands_on_sign_in_page_of_sl() throws Exception {
 	   String headerOfLoginPage= driver.findElement(By.xpath("//div[text()='Swag Labs']")).getText();
-	   
+	  
 	   if(headerOfLoginPage.equals("Swag Labs")) {
 		   System.out.println("User landed on Login Page");
+//		   throw new Exception("Failed");
 	   }else {
 		   throw new Exception("Wrong Page");
 	   }
