@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 		features= {"src\\test\\resources\\Electronics\\"},
 		glue= {"stepdefinition","projecthooks"},
 		plugin= {"pretty"}
-		,tags="@MultipleCellsList"
+		,tags="@ListOfMap",
+				dryRun=true
 		
 		)
 
